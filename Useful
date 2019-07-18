@@ -1,0 +1,15 @@
+# Start the app
+python3 manage.py runserver $IP:$C9_PORT
+
+# Access local DB 
+sqlite3 db.sqlite3
+
+# display tables
+.tables
+
+# Set columns and headers on when in local db to make ease of use
+.mode column
+.headers on
+
+# Exit SQlite3
+.quit
